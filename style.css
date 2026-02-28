@@ -1,0 +1,153 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.option{
+    height: 100px;
+    width: 150px;
+    background: rgb(211, 211, 211);
+    border-radius: 15px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(104, 104, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.selected{
+    border: 3px solid rgb(96, 96, 255);
+}
+
+.rightSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.liveClicks{
+    font-size: 3rem;
+    color: rgb(109, 109, 252);
+    font-weight: 500;
+}
+
+.clickArea{
+    height: 200px;
+    width: 60%;
+    background: rgb(211, 211, 211);
+    border-radius: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.start{
+    font-size: 2rem;
+    padding: 5px 15px;
+    border: 2px solid rgb(102, 102, 250);
+    background: rgba(112, 112, 255, 0.527);
+    font-weight: 600;
+}
+
+.result_back{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.226);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.result{
+    border-radius: 15px;
+    border: 2px solid black;
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+    padding: 10px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.result h2{
+    font-size: 3rem;
+    color: rgb(113, 113, 250);
+}
+
+.again{
+    padding: 5px 10px;
+    color: black;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+@media (max-width: 600px) {
+    .option{
+        height: 80px;
+        width: 100px;
+        font-size: 1.5rem;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+    .clickArea{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px){
+    .result{
+        width: 250px;
+    }
+}
